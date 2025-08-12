@@ -10,8 +10,5 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
-app.use(cors({
-    origin: "http://localhost:5173", // your frontend URL
-    credentials: true
-}));
+app.use(cors());
 module.exports = app;
